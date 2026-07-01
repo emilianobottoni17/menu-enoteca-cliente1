@@ -1,0 +1,19 @@
+{
+  "categoria": "Cibo",
+  "piatti": [
+    {
+      "id": 1,
+      "nome": "Tagliere di Salumi e Formaggi",
+      "prezzo": "15.00",
+      "descrizione": "Selezione di salumi locali e formaggi stagionati con miele di acacia.",
+      "allergeni": "Latte, Glutine"
+    },
+    {
+      "id": 2,
+      "nome": "Crostini Gourmet",
+      "prezzo": "8.00",
+      "descrizione": "Pane artigianale con crema di tartufo e funghi porcini.",
+      "allergeni": "Glutine"
+    }
+  ]
+}
