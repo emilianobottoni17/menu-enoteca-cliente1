@@ -1,0 +1,35 @@
+{
+  "menu": [
+    {
+      "categoria": "Antipasti",
+      "piatti": [
+        {"nome": "Tagliere di Salumi", "prezzo": "15.00€", "descrizione": "Selezione di salumi locali.", "allergeni": "-"},
+        {"nome": "Crostini al Tartufo", "prezzo": "8.00€", "descrizione": "Pane artigianale e crema al tartufo.", "allergeni": "Glutine"}
+      ]
+    },
+    {
+      "categoria": "Primi",
+      "piatti": [
+        {"nome": "Tagliatelle al Ragù", "prezzo": "12.00€", "descrizione": "Pasta fresca fatta in casa.", "allergeni": "Glutine, Uova"}
+      ]
+    },
+    {
+      "categoria": "Secondi",
+      "piatti": [
+        {"nome": "Tagliata di Manzo", "prezzo": "20.00€", "descrizione": "Carne frollata con rucola e grana.", "allergeni": "-"}
+      ]
+    },
+    {
+      "categoria": "Contorni",
+      "piatti": [
+        {"nome": "Patate al forno", "prezzo": "5.00€", "descrizione": "Patate croccanti al rosmarino.", "allergeni": "-"}
+      ]
+    },
+    {
+      "categoria": "Dolci",
+      "piatti": [
+        {"nome": "Tiramisù", "prezzo": "6.00€", "descrizione": "Ricetta tradizionale.", "allergeni": "Lattosio, Uova"}
+      ]
+    }
+  ]
+}
