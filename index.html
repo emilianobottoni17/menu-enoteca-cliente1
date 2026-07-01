@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Nostro Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            background-color: #FAF9F6; 
+            color: #800000; 
+            font-family: 'Lora', serif; 
+        }
+        h1, h2, h3 { 
+            font-family: 'Playfair Display', serif; 
+        }
+        .granata-text { color: #800000; }
+        .oro-text { color: #B8860B; }
+        .citazione { 
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #444; /* Un grigio scuro per non appesantire */
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="max-w-md mx-auto">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold mb-2">Menu</h1>
+            <div class="w-20 h-1 bg-[#800000] mx-auto"></div>
+        </header>
+        
+        <div id="menu-container" class="space-y-12"></div>
+        
+        <footer class="text-center mt-16 pb-10">
+            <p class="text-xs text-stone-400">Servizio offerto da Garnet Solutions</p>
+        </footer>
+    </div>
+
+    <script>
+        fetch('menu-cibo.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('menu-container');
+                data.menu.forEach(cat => {
+                    let html = `
+                        <div class="text-center mb-6">
+                            <h2 class="text-3xl font-bold uppercase tracking-widest mb-2">${cat.categoria}</h2>
+                            ${cat.citazione ? `<p class="citazione text-lg mb-6 px-4">"${cat.citazione}"</p>` : ''}
+                            <div class="w-full h-px bg-red-900/20 mb-8"></div>
+                        </div>
+                    `;
+                    
+                    cat.piatti.forEach(p => {
+                        html += `
+                            <div class="mb-6 group">
+                                <div class="flex justify-between items-baseline mb-1">
+                                    <h3 class="font-bold text-xl">${p.nome}</h3>
+                                    <span class="oro-text font-bold text-lg ml-4">${p.prezzo}</span>
+                                </div>
+                                <p class="text-stone-600 leading-relaxed">${p.descrizione}</p>
+                                ${p.allergeni !== "-" ? `<p class="text-[10px] text-stone-400 mt-1 uppercase tracking-tighter">Allergeni: ${p.allergeni}</p>` : ''}
+                            </div>
+                        `;
+                    });
+                    container.innerHTML += `<section>${html}</section>`;
+                });
+            });
+    </script>
+</body>
+</html>
