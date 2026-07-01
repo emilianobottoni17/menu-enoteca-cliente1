@@ -1,0 +1,37 @@
+{
+  "menu": [
+    {
+      "categoria": "Antipasti",
+      "citazione": "La vita è troppo breve per bere vini mediocri",
+      "piatti": [
+        {"nome": "Tagliere Misto", "prezzo": "14.00€", "descrizione": "Selezione di salumi e formaggi locali.", "allergeni": "-"},
+        {"nome": "Vitello Tonnato della Tradizione", "prezzo": "11.00€", "descrizione": "Fette di girello di vitello cotto a bassa temperatura servite con salsa tonnata artigianale e capperi di Pantelleria.", "allergeni": "Uova, Pesce"}
+      ]
+    },
+    {
+      "categoria": "Primi",
+      "citazione": "Un pasto senza vino è come un giorno senza sole.",
+      "piatti": [
+        {"nome": "Agnolotti al Sugo d'Arrosto", "prezzo": "12.00€", "descrizione": "Tradizionali agnolotti di pasta fresca all'uovo ripieni di brasato, serviti nel loro ristretto di arrosto non filtrato.", "allergeni": "Glutine, Uova, Lattosio, Sedano"}
+      ]
+    },
+    {
+      "categoria": "Secondi",
+      "piatti": [
+        {"nome": "Tagliata di Manzo", "prezzo": "20.00€", "descrizione": "Carne frollata con rucola e grana.", "allergeni": "-"}
+      ]
+    },
+    {
+      "categoria": "Contorni",
+      "piatti": [
+        {"nome": "Patate al forno", "prezzo": "5.00€", "descrizione": "Patate croccanti al rosmarino.", "allergeni": "-"}
+      ]
+    },
+    {
+      "categoria": "Dolci",
+      "piatti": [
+        {"nome": "Tiramisù", "prezzo": "6.00€", "descrizione": "Ricetta tradizionale.", "allergeni": "Lattosio, Uova"}
+      ]
+    }
+  ]
+}
